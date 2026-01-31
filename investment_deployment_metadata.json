@@ -1,0 +1,48 @@
+{
+    "model_name": "Random Forest",
+    "model_file": "Random_Forest_investment_model.pkl",
+    "test_accuracy": 100.0,
+    "test_f1_score": 100.0,
+    "training_date": "2026-01-31 22:55:00",
+    "features": [
+        "Annual_Revenue_USD",
+        "Annual_Sales",
+        "Founder_Investment_USD",
+        "Employee_Count",
+        "Years_Active",
+        "Revenue_Growth_Rate_%",
+        "Profit_Margin_%",
+        "revenue_per_employee",
+        "sales_per_employee",
+        "revenue_per_investment",
+        "roi_ratio",
+        "investment_intensity",
+        "revenue_maturity",
+        "is_profitable",
+        "sales_to_revenue_ratio",
+        "Sector",
+        "Stage"
+    ],
+    "target_variable": "Invest_Decision",
+    "categorical_features": [
+        "Sector",
+        "Stage"
+    ],
+    "numerical_features": [
+        "Annual_Revenue_USD",
+        "Annual_Sales",
+        "Founder_Investment_USD",
+        "Employee_Count",
+        "Years_Active",
+        "Revenue_Growth_Rate_%",
+        "Profit_Margin_%",
+        "revenue_per_employee",
+        "sales_per_employee",
+        "revenue_per_investment",
+        "roi_ratio",
+        "investment_intensity",
+        "revenue_maturity",
+        "is_profitable",
+        "sales_to_revenue_ratio"
+    ]
+}

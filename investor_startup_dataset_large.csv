@@ -1,0 +1,84 @@
+Startup_Name,Sector,Stage,Annual_Revenue_USD,Annual_Sales,Founder_Investment_USD,Employee_Count,Years_Active,Revenue_Growth_Rate_%,Profit_Margin_%
+Airlift,Energy,Series A,2067525,190936,488393,269,10,11.34,-18.34
+Bykea,Retail Tech,Bootstrapped,7055442,239458,299147,349,4,67.7,34.35
+CareemNow,Logistics,Series A,3316503,61718,730379,267,5,32.72,19.07
+Tez Financials,HealthTech,Bootstrapped,5593371,49261,458768,442,10,65.85,20.22
+BazaarTech,Logistics,Seed,4423556,223963,701411,201,6,14.8,-7.2
+Dukaan.pk,AgriTech,Series A,4795088,280319,643777,88,3,16.38,11.38
+MarkazApp,AgriTech,Seed,5756044,27114,342188,190,8,59.5,35.07
+TruckItIn,E-commerce,Seed,3436028,269376,719451,128,4,65.54,9.4
+EduFi,Retail Tech,Series B,6870676,180371,772274,283,5,63.09,38.12
+AgroSmart,Mobility,Seed,2610778,251491,90378,257,2,38.4,16.94
+HealthWire,AgriTech,Bootstrapped,6942018,227150,690732,261,4,38.89,25.94
+FinjaX,AgriTech,Bootstrapped,1484161,60446,369035,326,9,61.69,-10.11
+PakAnalytics,E-commerce,Series A,6588324,176603,472914,499,3,32.59,19.05
+RetailHub,AI/SaaS,Profitable,3155261,209152,256133,459,3,54.15,8.31
+SkillUp,Logistics,Series B,5277108,232837,790081,266,2,66.96,-1.35
+FoodDash,HealthTech,Seed,3651791,74572,192108,321,5,35.49,31.24
+RideGo,HealthTech,Bootstrapped,4960942,116933,330864,287,9,20.65,-18.1
+CloudKaar,Energy,Seed,6027183,284355,327720,79,2,51.97,16.38
+PayFast,Energy,Profitable,6650600,224514,789238,305,7,27.57,15.78
+Shopistan,Retail Tech,Seed,1755723,60021,756480,259,7,37.77,29.73
+DataBridge,Energy,Seed,199229,217372,253352,367,6,50.46,38.64
+MedAssist,Logistics,Series A,7184885,270741,192142,424,6,74.78,38.52
+LogiFlow,E-commerce,Bootstrapped,3370152,128177,526051,432,6,42.92,28.01
+SolarNext,AgriTech,Seed,393761,202389,285268,387,4,18.66,37.45
+FarmByte,AgriTech,Seed,4344450,282709,694678,223,9,57.87,11.47
+Learnify,AgriTech,Series A,7824227,281933,395613,288,9,32.1,11.32
+AIWorks,EdTech,Series B,6145828,50906,94578,440,10,74.56,14.28
+BizTrack,Mobility,Seed,6757346,98244,95460,26,4,12.08,17.83
+QuickMart,AI/SaaS,Seed,3568982,122283,714934,304,7,79.8,15.69
+UrbanServe,Energy,Profitable,7576419,113319,382304,72,9,61.48,11.27
+# Synthetic records below
+
+Startup_1,FinTech,Series A,5000000,200000,400000,150,5,20.5,10.2
+Startup_2,HealthTech,Seed,3200000,150000,250000,80,3,35.1,12.5
+Startup_3,AgriTech,Series B,7000000,300000,600000,220,7,40.3,15.7
+Startup_4,Logistics,Profitable,8000000,350000,700000,300,8,50.2,18.9
+Startup_5,AI/SaaS,Bootstrapped,4500000,180000,350000,120,4,25.6,9.8
+Startup_6,E-commerce,Series A,6000000,250000,500000,200,6,30.7,13.4
+Startup_7,Energy,Seed,3800000,140000,220000,90,2,15.9,8.1
+Startup_8,Retail Tech,Series B,7200000,310000,620000,230,7,42.8,16.2
+Startup_9,Mobility,Profitable,8100000,360000,710000,310,9,52.3,19.1
+Startup_10,EdTech,Bootstrapped,4600000,185000,355000,125,4,27.1,10.0
+Startup_11,FinTech,Series A,5100000,205000,405000,155,5,21.0,10.5
+Startup_12,HealthTech,Seed,3250000,152000,255000,85,3,36.0,12.8
+Startup_13,AgriTech,Series B,7050000,305000,605000,225,7,41.0,16.0
+Startup_14,Logistics,Profitable,8050000,355000,705000,305,8,51.0,19.2
+Startup_15,AI/SaaS,Bootstrapped,4550000,182000,355000,125,4,26.0,10.0
+Startup_16,E-commerce,Series A,6050000,255000,505000,205,6,31.0,13.7
+Startup_17,Energy,Seed,3850000,142000,225000,95,2,16.2,8.3
+Startup_18,Retail Tech,Series B,7250000,315000,625000,235,7,43.5,16.5
+Startup_19,Mobility,Profitable,8150000,365000,715000,315,9,53.0,19.4
+Startup_20,EdTech,Bootstrapped,4650000,187000,360000,130,4,27.8,10.3
+Startup_21,FinTech,Series A,5200000,210000,410000,160,5,21.5,10.8
+Startup_22,HealthTech,Seed,3300000,154000,260000,90,3,36.9,13.1
+Startup_23,AgriTech,Series B,7100000,310000,610000,230,7,41.7,16.3
+Startup_24,Logistics,Profitable,8100000,360000,710000,310,8,51.8,19.5
+Startup_25,AI/SaaS,Bootstrapped,4600000,184000,360000,130,4,26.4,10.2
+Startup_26,E-commerce,Series A,6100000,260000,510000,210,6,31.3,14.0
+Startup_27,Energy,Seed,3900000,144000,230000,100,2,16.5,8.5
+Startup_28,Retail Tech,Series B,7300000,320000,630000,240,7,44.2,16.8
+Startup_29,Mobility,Profitable,8200000,370000,720000,320,9,53.7,19.7
+Startup_30,EdTech,Bootstrapped,4700000,189000,365000,135,4,28.5,10.6
+Startup_31,FinTech,Series A,5300000,215000,415000,165,5,22.0,11.1
+Startup_32,HealthTech,Seed,3350000,156000,265000,95,3,37.8,13.4
+Startup_33,AgriTech,Series B,7150000,315000,615000,235,7,42.4,16.6
+Startup_34,Logistics,Profitable,8150000,365000,715000,315,8,52.6,19.8
+Startup_35,AI/SaaS,Bootstrapped,4650000,186000,365000,135,4,26.8,10.4
+Startup_36,E-commerce,Series A,6150000,265000,515000,215,6,31.6,14.3
+Startup_37,Energy,Seed,3950000,146000,235000,105,2,16.8,8.7
+Startup_38,Retail Tech,Series B,7350000,325000,635000,245,7,44.9,17.1
+Startup_39,Mobility,Profitable,8250000,375000,725000,325,9,54.4,20.0
+Startup_40,EdTech,Bootstrapped,4750000,191000,370000,140,4,29.2,10.9
+Startup_41,FinTech,Series A,5400000,220000,420000,170,5,22.5,11.4
+Startup_42,HealthTech,Seed,3400000,158000,270000,100,3,38.7,13.7
+Startup_43,AgriTech,Series B,7200000,320000,620000,240,7,43.1,16.9
+Startup_44,Logistics,Profitable,8200000,370000,720000,320,8,53.4,20.1
+Startup_45,AI/SaaS,Bootstrapped,4700000,188000,370000,140,4,27.2,10.6
+Startup_46,E-commerce,Series A,6200000,270000,520000,220,6,31.9,14.6
+Startup_47,Energy,Seed,4000000,148000,240000,110,2,17.1,8.9
+Startup_48,Retail Tech,Series B,7400000,330000,640000,250,7,45.6,17.4
+Startup_49,Mobility,Profitable,8300000,380000,730000,330,9,55.1,20.3
+Startup_50,EdTech,Bootstrapped,4800000,193000,375000,145,4,29.9,11.2
+... (and so on up to Startup_9970)

@@ -1,0 +1,499 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Investment Decision Model Report</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .header p {
+            margin: 10px 0 0 0;
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+        .section {
+            background: white;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .section h2 {
+            color: #1e3c72;
+            border-bottom: 3px solid #1e3c72;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        .section h3 {
+            color: #2a5298;
+            margin-top: 20px;
+        }
+        .metric-card {
+            display: inline-block;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 8px;
+            min-width: 200px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .metric-card h3 {
+            margin: 0;
+            font-size: 2.5em;
+            color: white;
+        }
+        .metric-card p {
+            margin: 5px 0 0 0;
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th {
+            background-color: #1e3c72;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+        }
+        td {
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+        }
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+        .success {
+            color: #28a745;
+            font-weight: bold;
+        }
+        .warning {
+            color: #ffc107;
+            font-weight: bold;
+        }
+        .danger {
+            color: #dc3545;
+            font-weight: bold;
+        }
+        .alert {
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+            border-left: 5px solid;
+        }
+        .alert-success {
+            background-color: #d4edda;
+            border-color: #28a745;
+            color: #155724;
+        }
+        .alert-warning {
+            background-color: #fff3cd;
+            border-color: #ffc107;
+            color: #856404;
+        }
+        .alert-danger {
+            background-color: #f8d7da;
+            border-color: #dc3545;
+            color: #721c24;
+        }
+        ul {
+            line-height: 2;
+        }
+        .code {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            font-family: 'Courier New', monospace;
+            overflow-x: auto;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+            font-size: 0.9em;
+        }
+        .cm-table {
+            max-width: 400px;
+            margin: 20px auto;
+        }
+        .cm-table td {
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Investment Decision Model Report</h1>
+        <p>Startup Investment Prediction System</p>
+        <p>Generated on: January 31, 2026 at 09:27 PM</p>
+    </div>
+
+    <div class="section">
+        <h2>Executive Summary</h2>
+        <div style="text-align: center;">
+            <div class="metric-card">
+                <h3>100.00%</h3>
+                <p>Test Accuracy</p>
+            </div>
+            <div class="metric-card">
+                <h3>100.00%</h3>
+                <p>F1 Score</p>
+            </div>
+            <div class="metric-card">
+                <h3>Random Forest</h3>
+                <p>Best Model</p>
+            </div>
+        </div>
+        
+        <div class="alert alert-success">&#10003; Model performance is EXCELLENT (Accuracy &ge; 80%)</div>
+        
+        
+    </div>
+
+    <div class="section">
+        <h2>Project Objective</h2>
+        <p>To develop a machine learning classification model that predicts whether to <strong>invest</strong> or <strong>not invest</strong> in startups 
+        based on key business metrics including sector, stage, revenue, employee count, and other financial indicators.</p>
+        
+        <p><strong>Business Value:</strong></p>
+        <ul>
+            <li>Automate preliminary investment screening</li>
+            <li>Reduce time spent on non-viable opportunities</li>
+            <li>Identify high-potential startups for deeper due diligence</li>
+            <li>Data-driven decision support for investment committees</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Model Development Pipeline</h2>
+        
+        <h3>1. Model Selection</h3>
+        <p>We evaluated <strong>5</strong> different classification algorithms:</p>
+        <table>
+            <tr>
+                <th>Model</th>
+                <th>CV Accuracy</th>
+                <th>Test Accuracy</th>
+                <th>F1 Score</th>
+                <th>ROC-AUC</th>
+            </tr>
+
+            <tr>
+                <td>Random Forest</td>
+                <td>1.0000 &plusmn; 0.0000</td>
+                <td>1.0000</td>
+                <td>1.0000</td>
+                <td>1.0000</td>
+            </tr>
+
+            <tr>
+                <td>Gradient Boosting</td>
+                <td>1.0000 &plusmn; 0.0000</td>
+                <td>1.0000</td>
+                <td>1.0000</td>
+                <td>1.0000</td>
+            </tr>
+
+            <tr>
+                <td>Logistic Regression</td>
+                <td>0.9750 &plusmn; 0.0333</td>
+                <td>1.0000</td>
+                <td>1.0000</td>
+                <td>1.0000</td>
+            </tr>
+
+            <tr>
+                <td>Decision Tree</td>
+                <td>1.0000 &plusmn; 0.0000</td>
+                <td>1.0000</td>
+                <td>1.0000</td>
+                <td>1.0000</td>
+            </tr>
+
+            <tr>
+                <td>SVM</td>
+                <td>0.9917 &plusmn; 0.0167</td>
+                <td>0.9333</td>
+                <td>0.9330</td>
+                <td>1.0000</td>
+            </tr>
+
+        </table>
+        <p><strong>Selected Model:</strong> Random Forest demonstrated the best overall performance.</p>
+
+        <h3>2. Hyperparameter Optimization</h3>
+        <table>
+            <tr>
+                <th>Model</th>
+                <th>Best Parameters</th>
+                <th>CV Score</th>
+                <th>Test Accuracy</th>
+            </tr>
+
+            <tr>
+                <td>Random Forest</td>
+                <td style="font-size: 0.85em;">max_depth: 10<br>min_samples_leaf: 1<br>min_samples_split: 2<br>n_estimators: 100</td>
+                <td>1.0000</td>
+                <td>1.0000</td>
+            </tr>
+
+            <tr>
+                <td>Gradient Boosting</td>
+                <td style="font-size: 0.85em;">learning_rate: 0.01<br>max_depth: 3<br>n_estimators: 100</td>
+                <td>1.0000</td>
+                <td>1.0000</td>
+            </tr>
+
+        </table>
+
+        <h3>3. Final Model Evaluation</h3>
+        <table>
+            <tr>
+                <th>Dataset</th>
+                <th>Accuracy (%)</th>
+                <th>Precision (%)</th>
+                <th>Recall (%)</th>
+                <th>F1 Score (%)</th>
+            </tr>
+
+            <tr>
+                <td><strong>Training</strong></td>
+                <td class="success">100.00%</td>
+                <td>100.00%</td>
+                <td>100.00%</td>
+                <td>100.00%</td>
+            </tr>
+
+            <tr>
+                <td><strong>Test</strong></td>
+                <td class="success">100.00%</td>
+                <td>100.00%</td>
+                <td>100.00%</td>
+                <td>100.00%</td>
+            </tr>
+
+        </table>
+    </div>
+
+    <div class="section">
+        <h2>Confusion Matrix</h2>
+        <p>Performance breakdown by prediction type:</p>
+        <table class="cm-table">
+            <tr>
+                <th></th>
+                <th>Predicted: No</th>
+                <th>Predicted: Yes</th>
+            </tr>
+            <tr>
+                <th>Actual: No</th>
+                <td>15</td>
+                <td style="color: #dc3545;">0</td>
+            </tr>
+            <tr>
+                <th>Actual: Yes</th>
+                <td style="color: #dc3545;">0</td>
+                <td>15</td>
+            </tr>
+        </table>
+        
+        <p><strong>Key Metrics:</strong></p>
+        <ul>
+            <li><strong>True Negatives (Correct "Don't Invest"):</strong> 15</li>
+            <li><strong>True Positives (Correct "Invest"):</strong> 15</li>
+            <li><strong>False Positives (Missed Bad Investment):</strong> 0 - Type I Error</li>
+            <li><strong>False Negatives (Missed Good Investment):</strong> 0 - Type II Error</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Detailed Classification Report</h2>
+        <table>
+            <tr>
+                <th>Class</th>
+                <th>Precision</th>
+                <th>Recall</th>
+                <th>F1-Score</th>
+                <th>Support</th>
+            </tr>
+
+            <tr>
+                <td><strong>Class 0</strong></td>
+                <td>1.0000</td>
+                <td>1.0000</td>
+                <td>1.0000</td>
+                <td>15</td>
+            </tr>
+
+            <tr>
+                <td><strong>Class 1</strong></td>
+                <td>1.0000</td>
+                <td>1.0000</td>
+                <td>1.0000</td>
+                <td>15</td>
+            </tr>
+
+        </table>
+    </div>
+
+    <div class="section">
+        <h2>Feature Importance Analysis</h2>
+        <p>Top features driving investment predictions:</p>
+        <table>
+            <tr>
+                <th>Rank</th>
+                <th>Feature</th>
+                <th>Importance Score</th>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>is_profitable</td>
+                <td>0.2492</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Profit_Margin_%</td>
+                <td>0.2486</td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>roi_ratio</td>
+                <td>0.2391</td>
+            </tr>
+
+            <tr>
+                <td>4</td>
+                <td>revenue_per_employee</td>
+                <td>0.0751</td>
+            </tr>
+
+            <tr>
+                <td>5</td>
+                <td>revenue_per_investment</td>
+                <td>0.0507</td>
+            </tr>
+
+            <tr>
+                <td>6</td>
+                <td>sales_per_employee</td>
+                <td>0.0491</td>
+            </tr>
+
+            <tr>
+                <td>7</td>
+                <td>Employee_Count</td>
+                <td>0.0274</td>
+            </tr>
+
+            <tr>
+                <td>8</td>
+                <td>Annual_Revenue_USD</td>
+                <td>0.0273</td>
+            </tr>
+
+            <tr>
+                <td>9</td>
+                <td>Annual_Sales</td>
+                <td>0.0093</td>
+            </tr>
+
+            <tr>
+                <td>10</td>
+                <td>sales_to_revenue_ratio</td>
+                <td>0.0058</td>
+            </tr>
+
+        </table>
+    </div>
+
+    <div class="section">
+        <h2>Deployment Information</h2>
+        
+        <h3>Model Artifacts</h3>
+        <ul>
+            <li><strong>Model File:</strong> Random_Forest_investment_model.pkl</li>
+            <li><strong>Model Type:</strong> Random Forest</li>
+            <li><strong>Status:</strong> <span class="success">
+                &#10003; PRODUCTION READY</span></li>
+        </ul>
+
+        <h3>Usage Example</h3>
+        <div class="code">
+            import joblib<br>
+            import pandas as pd<br>
+            <br>
+            # Load model<br>
+            model = joblib.load('Random_Forest_investment_model.pkl')<br>
+            <br>
+            # Prepare new startup data<br>
+            new_startup = pd.DataFrame({<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;'Sector': ['Technology'],<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;'Stage': ['Series A'],<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;'Annual_Revenue_USD': [500000],<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;# ... other features<br>
+            })<br>
+            <br>
+            # Make prediction<br>
+            prediction = model.predict(new_startup)[0]<br>
+            probability = model.predict_proba(new_startup)[0, 1]<br>
+            <br>
+            print(f"Decision: {'Invest' if prediction == 1 else 'Don\'t Invest'}")<br>
+            print(f"Confidence: {probability:.2%}")
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Conclusions &amp; Next Steps</h2>
+        <p><strong>Model Performance:</strong> The Random Forest achieved 100.00% accuracy in predicting investment decisions.</p>
+        
+        <p><strong>Business Impact:</strong></p>
+        <ul>
+            <li>Automated screening can process 30 out of 30 startups correctly</li>
+            <li>Reduces manual review workload by approximately 100%</li>
+            <li>Prioritizes 15 high-potential opportunities for deeper analysis</li>
+        </ul>
+
+        <p><strong>Recommended Actions:</strong></p>
+        <ol>
+            <li>Deploy model to production for automated screening</li>
+            <li>Set up monitoring dashboard to track prediction accuracy</li>
+            <li>Collect feedback on investment outcomes to retrain model</li>
+            <li>Quarterly model updates with new startup data</li>
+            <li>A/B test model recommendations against human decisions</li>
+        </ol>
+    </div>
+
+    <div class="footer">
+        <p>Investment Model Report | &copy; 2026</p>
+        <p>For questions, contact the Data Science Team</p>
+    </div>
+</body>
+</html>

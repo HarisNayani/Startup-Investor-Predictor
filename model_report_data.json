@@ -1,0 +1,207 @@
+{
+    "selection_results": [
+        {
+            "Model": "Random Forest",
+            "CV_Accuracy_Mean": 1.0,
+            "CV_Accuracy_Std": 0.0,
+            "Test_Accuracy": 1.0,
+            "Precision": 1.0,
+            "Recall": 1.0,
+            "F1_Score": 1.0,
+            "ROC_AUC": 1.0
+        },
+        {
+            "Model": "Gradient Boosting",
+            "CV_Accuracy_Mean": 1.0,
+            "CV_Accuracy_Std": 0.0,
+            "Test_Accuracy": 1.0,
+            "Precision": 1.0,
+            "Recall": 1.0,
+            "F1_Score": 1.0,
+            "ROC_AUC": 1.0
+        },
+        {
+            "Model": "Logistic Regression",
+            "CV_Accuracy_Mean": 0.975,
+            "CV_Accuracy_Std": 0.03333333333333334,
+            "Test_Accuracy": 1.0,
+            "Precision": 1.0,
+            "Recall": 1.0,
+            "F1_Score": 1.0,
+            "ROC_AUC": 1.0
+        },
+        {
+            "Model": "Decision Tree",
+            "CV_Accuracy_Mean": 1.0,
+            "CV_Accuracy_Std": 0.0,
+            "Test_Accuracy": 1.0,
+            "Precision": 1.0,
+            "Recall": 1.0,
+            "F1_Score": 1.0,
+            "ROC_AUC": 1.0
+        },
+        {
+            "Model": "SVM",
+            "CV_Accuracy_Mean": 0.9916666666666666,
+            "CV_Accuracy_Std": 0.016666666666666653,
+            "Test_Accuracy": 0.9333333333333333,
+            "Precision": 0.9411764705882353,
+            "Recall": 0.9333333333333333,
+            "F1_Score": 0.9330357142857143,
+            "ROC_AUC": 1.0
+        }
+    ],
+    "optimization_results": [
+        {
+            "Model": "Random Forest",
+            "Best_Params": {
+                "model__max_depth": 10,
+                "model__min_samples_leaf": 1,
+                "model__min_samples_split": 2,
+                "model__n_estimators": 100
+            },
+            "Best_CV_Score": 1.0,
+            "Test_Accuracy": 1.0,
+            "Test_F1": 1.0
+        },
+        {
+            "Model": "Gradient Boosting",
+            "Best_Params": {
+                "model__learning_rate": 0.01,
+                "model__max_depth": 3,
+                "model__n_estimators": 100
+            },
+            "Best_CV_Score": 1.0,
+            "Test_Accuracy": 1.0,
+            "Test_F1": 1.0
+        }
+    ],
+    "evaluation_metrics": [
+        {
+            "Dataset": "Training",
+            "Accuracy_%": 100.0,
+            "Precision_%": 100.0,
+            "Recall_%": 100.0,
+            "F1_Score_%": 100.0,
+            "ROC_AUC": 1.0
+        },
+        {
+            "Dataset": "Test",
+            "Accuracy_%": 100.0,
+            "Precision_%": 100.0,
+            "Recall_%": 100.0,
+            "F1_Score_%": 100.0,
+            "ROC_AUC": 1.0
+        }
+    ],
+    "final_model": "Random Forest",
+    "test_accuracy": 100.0,
+    "test_f1": 100.0,
+    "feature_importance": [
+        {
+            "Feature": "is_profitable",
+            "Importance": 0.24916330305346604
+        },
+        {
+            "Feature": "Profit_Margin_%",
+            "Importance": 0.2485898894652342
+        },
+        {
+            "Feature": "roi_ratio",
+            "Importance": 0.23906218349448494
+        },
+        {
+            "Feature": "revenue_per_employee",
+            "Importance": 0.07512835544354071
+        },
+        {
+            "Feature": "revenue_per_investment",
+            "Importance": 0.05071550982001329
+        },
+        {
+            "Feature": "sales_per_employee",
+            "Importance": 0.04910312693091818
+        },
+        {
+            "Feature": "Employee_Count",
+            "Importance": 0.027378104719779577
+        },
+        {
+            "Feature": "Annual_Revenue_USD",
+            "Importance": 0.027339847881520826
+        },
+        {
+            "Feature": "Annual_Sales",
+            "Importance": 0.009331638910121667
+        },
+        {
+            "Feature": "sales_to_revenue_ratio",
+            "Importance": 0.00578890747662653
+        },
+        {
+            "Feature": "revenue_maturity",
+            "Importance": 0.005006766847428508
+        },
+        {
+            "Feature": "investment_intensity",
+            "Importance": 0.004686613832348478
+        },
+        {
+            "Feature": "Years_Active",
+            "Importance": 0.004275690063945729
+        },
+        {
+            "Feature": "Founder_Investment_USD",
+            "Importance": 0.002983482739421539
+        },
+        {
+            "Feature": "Revenue_Growth_Rate_%",
+            "Importance": 0.0014465793211497937
+        },
+        {
+            "Feature": "Sector_Energy",
+            "Importance": 0.0
+        },
+        {
+            "Feature": "Stage_Series A",
+            "Importance": 0.0
+        }
+    ],
+    "confusion_matrix": [
+        [
+            15,
+            0
+        ],
+        [
+            0,
+            15
+        ]
+    ],
+    "classification_report": {
+        "0": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 15.0
+        },
+        "1": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 15.0
+        },
+        "accuracy": 1.0,
+        "macro avg": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 30.0
+        },
+        "weighted avg": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 30.0
+        }
+    }
+}
